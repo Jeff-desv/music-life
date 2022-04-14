@@ -1,0 +1,241 @@
+/*====================== Layout ====================*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+body{
+    /*Adcionando imagens de bacground*/
+    background: url('../img/capa.png'),/*Primeira Imagem*/
+                url('../img/ruido.png'),/*Segunda Imagem como ruido para dar efeito, imagem tem que ser transparente*/
+                linear-gradient(50deg, #ff4169, #7c26f8 );/*Aplicando um gradiente na imagem*/
+    background-attachment: fixed;/*Para deixar o background fixo, parado*/
+    overflow-x: hidden;/*remover barra de navegação horizontal*/
+}
+/*========Navbar=======*/
+.img-logo{
+    height: 6.7rem;
+    width: 10rem;
+    display: block;
+    background-image: url('../img/micsvg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+nav, .navbar-transparent{
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+nav, .button-color{
+    color: #fff;
+}
+.navbar-brand{
+    padding: 0;
+}
+.navbar-nav .nav-link{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+}
+.navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+}
+/*===========Fim Navbar==============*/
+/*=====Breakpoint Nav=====*/
+@media screen and (max-width: 667px){
+    .img-logo{
+        height: 3.7em;
+    }
+}
+/*=====Fim Breakpoint Nav=====*/
+/*============Capa============*/
+.capa{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+.texto-capa > a{
+    margin: 0.5em;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.8em;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+}
+/*--Botao*/
+.btn-custom{
+   color: #fff;
+   border-radius: 10rem;
+   padding: 0.9em, 1.2em;
+   margin: 0, 1.2em;
+   text-transform: uppercase;
+}
+.btn-roxo{
+    background-color: #7c26f8;
+}
+.btn-roxo:hover{
+    background-color: #6207e3;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+}
+.btn-branco{
+    border: 2px solid #fff;
+}
+.btn-branco:hover{
+    background-color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+}
+/*--Fim Botao*/
+/*================Fim  Capa===============*/
+/*=====Breakpoint CAPA=====*/
+@media screen and (max-width: 667px){
+    h1{
+        font-weight: 900;
+        font-size: 2.3em;
+    }
+    .btn-custom{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*=====Fim Breakpoint CAPA=====*/
+/*===========Seção de Serviços============*/
+#servicos{
+    background-color: #fff;
+    padding: 3em 0;
+}
+#servicos h2, #servicos h3{
+    color: #7c25f8;
+}
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+h3{
+    font-size: 2.3em;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+/*----img-custom----*/
+.img-custom{
+    padding: 0.8em 0 0.8em 0;
+}
+/*===========Fim da Seção de Serviços============*/
+/*=====Breakpoint Serviços=====*/
+@media screen and (max-width: 667px){
+    .albuns, .albuns-capa{
+        display: flex;
+        flex-direction: column;
+    }
+    .albuns-capa img{
+        width: 20rem;
+        padding: 0.6rem;
+        margin-left: 0.8em;
+    }
+    .text-capa h2{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 8rem;
+    }
+    .text-capa h3{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 8.2rem;
+    }
+    .text-capa p{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 8.5rem;
+    }
+}
+/*=====Fim Breakpoint Serviços=====*/
+/*=============Recursos==============*/
+#recursos{
+    padding: 3em 0;
+}
+#recursos h2, #recursos p{
+    color: #fff;
+}
+#recursos h3{
+    font-weight: bold;
+    color: rgb(43, 223, 223);
+}
+/*--Rotacionando as Imagens--*/
+.rotacionar{
+    -ms-transform: rotate(30deg);/*IE 9*/
+    -webkit-transform: rotate(30deg);/*Chrome, Safari, Opera*/
+    transform: rotate(30deg);
+    padding-left: 5em;
+    padding-bottom: 1em;
+}
+/*=============Fim Recursos==============*/
+/*=====Breakpoint Recursos=====*/
+@media screen and (max-width: 667px){
+    .rotacionar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25em;
+        transform: rotate(0);
+        margin-right: 9em;
+    }
+    .rotacionar .iphone-2{
+        padding-top: 2.8em;
+    }
+}
+/*=====Fim Breakpoint Recursos=====*/
+/*============= FOOTER ==============*/
+footer{
+    background-color: rgb(37, 36, 36);
+    padding: 6.7em 0 2em 0;
+    position: relative;/*Para ficar encima da imagem*/
+}
+#rodape h5{
+    color: #919496;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+footer .nav, a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .nav, a:hover{
+    color: #9bf0e1;
+}
+footer .nav{
+    padding: 0.3em;
+}
+.item-social{
+    float: right;
+    padding: 0.6em;
+}
+/*============= FIM FOOTER ==============*/
+/*=====Breakpoint FOOTER=====*/
+@media screen and (max-width: 667px){
+    footer #rodape .item-social .nav {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .itens-redes .item-social{
+        display: flex;
+        align-items: flex-start;
+        width: 1em;
+        margin: 1em;
+    }
+}
+/*=====Fim Breakpoint FOOTER=====*/
