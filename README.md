@@ -1,3 +1,3 @@
 <header> 
-  <h1> Sobre o Projeto </h1>
+  <h1 style="text-align: center;"> Sobre o Projeto </h1>
 </header>
